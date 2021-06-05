@@ -34,7 +34,8 @@
         "start": "react-scripts start",
         "build": "react-scripts build",
         "eject": "react-scripts eject",
-        "test": "jest  --config ./jest.config.json"
+        "test-rtl": "jest  --config ./jest.config.json",
+        "test-cy": "cypress open-ct"
     },
     "browserslist": [
         ">0.2%",
