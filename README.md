@@ -4,7 +4,7 @@ A comparison between [Cypress](https://www.cypress.io/) and [React Testing Libra
 
 ## Integration tests
 
-The integration tests has been added for the complete workflow opf the TODO app where composite components interacts with beach other.
+The integration tests has been added for the complete workflow of the TODO app where composite components interacts with each other.
 
 ![integration-flow](./flow.png)
 
