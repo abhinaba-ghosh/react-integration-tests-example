@@ -10,9 +10,9 @@ The integration tests has been added for the complete workflow of the TODO app w
 
 Same integration test is implemented using both - Cypress has React-Testing-Library. While both the libraries are effective, i feel cypress has a little edge over RTL because of below aspects -
 
--   Cypress simulates the test ina real browser, so developers can visualize the real-time interactions better.
--   Cypress provides fluent chained queries to make the page action easy.
--   Cypress retries each assertions and interactions out of the box
+-   Cypress executes the test in real browser context making the visualization experience better.
+-   Cypress provides fluent chained queries.
+-   Cypress retries each assertions out of the box that reduces the chance of flaky tests.
 -   [Cypress-React-Selector](https://github.com/abhinaba-ghosh/cypress-react-selector) plugin makes the job easy to fetch elements using native react properties - component, props and states.
 -   Cypress provides real-time react dev-tools support to observe react properties.
 
