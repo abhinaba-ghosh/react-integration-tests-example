@@ -2,8 +2,8 @@ import 'jsdom-global/register';
 import React from 'react';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
-import App from '../../src/components/App';
-import rootReducer from '../../src/reducers';
+import App from '../../components/App';
+import rootReducer from '../../reducers';
 import { render, fireEvent } from '@testing-library/react';
 
 const store = createStore(rootReducer);
