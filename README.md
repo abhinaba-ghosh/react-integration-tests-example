@@ -6,7 +6,7 @@ A comparison between [Cypress](https://www.cypress.io/) and [React Testing Libra
 
 The integration tests has been added for the complete workflow opf the TODO app where composite components interacts with beach other.
 
-![integration-flow]](./flow.png)
+![integration-flow](./flow.png)
 
 Same integration test is implemented using both - Cypress has React-Testing-Library. While both the libraries are effective, i feel cypress has a little edge over RTL because of below aspects -
 
