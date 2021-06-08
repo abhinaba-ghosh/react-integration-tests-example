@@ -3,7 +3,8 @@ import 'cypress-react-selector';
 import React from 'react';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
-import App from '../../components/App';
+import AddTodo from '../../containers/AddTodo';
+import VisibleTodoList from '../../containers/VisibleTodoList';
 import rootReducer from '../../reducers';
 
 const store = createStore(rootReducer);
@@ -14,7 +15,10 @@ describe('connected component integration tests using cypress-react-selector', (
     it('should add todo item using fireEvent', () => {
         mount(
             <Provider store={store}>
-                <App />
+                <div>
+                    <AddTodo />
+                    <VisibleTodoList />
+                </div>
             </Provider>
         );
 

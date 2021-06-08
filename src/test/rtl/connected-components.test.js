@@ -2,7 +2,8 @@ import 'jsdom-global/register';
 import React from 'react';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
-import App from '../../components/App';
+import AddTodo from '../../containers/AddTodo';
+import VisibleTodoList from '../../containers/VisibleTodoList';
 import rootReducer from '../../reducers';
 import { render, fireEvent } from '@testing-library/react';
 
@@ -12,7 +13,10 @@ describe('Connected component full app integration tests', () => {
     it('should add todo item using fireEvent', () => {
         const { container, getByTestId, getByText } = render(
             <Provider store={store}>
-                <App />
+                <div>
+                    <AddTodo />
+                    <VisibleTodoList />
+                </div>
             </Provider>
         );
 
